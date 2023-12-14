@@ -50,7 +50,7 @@ app.post("/api/users", async (req, res) => {
   } catch (err) {
     console.log(err);
   }
-  // newUser.save((err, data) => {
+  //   newUser.save((err, data) => {
   //   if (err) return console.log(err);
   //   res.json({ username: data.username, _id: data._id });
   // });
@@ -132,4 +132,3 @@ app.get("/api/users/:_id/logs", async (req, res) => {
 const listener = app.listen(process.env.PORT || 3000, () => {
   console.log("Your app is listening on port " + listener.address().port);
 });
-
